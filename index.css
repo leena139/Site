@@ -201,7 +201,7 @@ small {
 	font-size: 1.125em;
   width: 100%;
 	color:white;
-overflow: auto;
+  overflow: auto;
    background-color: black
 
 }
@@ -267,9 +267,9 @@ overflow: auto;
 	}
 
 	.contact{
-		padding-left: 6%!important;
-		padding-top: 6%!important;
-		padding-bottom: 6%!important;
+		padding-left: 9%!important;
+		padding-top: 9%!important;
+		padding-bottom: 9%!important;
 	}
 }
 
