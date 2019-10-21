@@ -84,7 +84,7 @@ border-right:none;
 
 .scene1
 {
- /* margin-top: 36px; */
+ margin-top: 36px;
 float: left;
 height: auto;
 /* padding: 8px; */
@@ -147,12 +147,7 @@ border-width: medium;
 border-style: groove;
 position:inherit;
 }
-.bordery
-{
-	border-color: red;
-	border-width: medium;
-	border-style: groove;
-}
+
 
 .signup {
 	height: 140px;
@@ -383,7 +378,7 @@ font-size: 0.875em;
 	display:grid;
 	grid-template-columns: 55% 45%;
 }
-.content
+.content1
 {
 	font-size: 1em;
 }
@@ -418,7 +413,7 @@ height: 85%!important;
 	grid-template-columns: 55% 45%;
 }
 
-.content
+.content1
 {
 	font-size: 1.125em;
 }
@@ -455,7 +450,7 @@ height: 85%!important;
 	display:grid;
 	grid-template-columns: 60% 40%;
 }
-.content{
+.content1{
 	font-size: 1em!important;
 }
 .font_change
@@ -488,7 +483,7 @@ height: 70%!important;
 		display:grid;
 		grid-template-columns: 55% 45%;
 	}
-	.content{
+	.content1{
 		font-size: 1.25em;
 	}
 	.font_change
@@ -523,7 +518,7 @@ font-size: 1em;
 	display:grid;
 	grid-template-columns: 60% 40%;
 }
-.content
+.content1
 {
 	font-size: 1.5625em;
 }
@@ -559,7 +554,7 @@ font-size: 1.125em;
 	display:grid;
 	grid-template-columns: 60% 40%;
 }
-.content
+.content1
 {
 	font-size: 1.5em;
 }
@@ -594,7 +589,7 @@ font-size: 1em!important;
 }
 .content1
 {
-	font-size: 1.5625em!important;
+	font-size: 1.4em!important;
 }
 .font_change
 {
@@ -605,7 +600,7 @@ font-size: 1em!important;
 }
  .contact
 {
-	font-size: 1.5em!important;
+	font-size: 1.4em!important;
 }
 }
 #wrapper {
