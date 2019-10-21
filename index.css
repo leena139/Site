@@ -592,13 +592,13 @@ font-size: 1em!important;
 	display:grid;
 	grid-template-columns: 60% 40%;
 }
-.content
+.content1
 {
-	font-size: 1.25em!important;
+	font-size: 1.5em!important;
 }
 .font_change
 {
-	font-size: 1.125em!important;
+	font-size: 1.25em!important;
 }
 .img1{
  height: 70%!important;
