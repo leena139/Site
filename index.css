@@ -392,7 +392,7 @@ font-size: 0.875em;
 	font-size: 0.875em;
 }
 .img1{
-height: 94.4%!important;
+height: 91.4%!important;
 
 }
 }
@@ -428,7 +428,7 @@ input[type=email]{
 	font-size: 0.875em;
 }
 .img1{
-height: 94.4%!important;
+height: 91.4%!important;
 
 }
 
@@ -493,8 +493,7 @@ height: 95.4%!important;
 		font-size: 1em;
 	}
 	.img1{
-	height: 90%!important;
-
+	height: 70%!important;
 	}
 }
 
@@ -559,14 +558,14 @@ font-size: 1.125em;
 }
 .content
 {
-	font-size: 1.5625em;
+	font-size: 1.5em;
 }
 .font_change
 {
-	font-size: 1.25em;
+	font-size: 1.125em;
 }
 .img1{
-height: 96.4%!important;
+height: 91.4%!important;
 
 }
 }
@@ -583,23 +582,24 @@ height: 96.4%!important;
 input[type=email]
 {
 width: 350px;
-font-size: 1.125em!important;
+font-size: 1em!important;
 }
 .wrapper
 {
 	display:grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 55% 45%;
 }
 .content
 {
-	font-size: 1.75em!important;
+	font-size: 1.5em!important;
 }
 .font_change
 {
 	font-size: 1em!important;
 }
-.img1{
-height: 91.4%!important;
+.column{
+ height: auto!important;
+
 }
  .contact
 {
