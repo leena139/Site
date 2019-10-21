@@ -574,8 +574,6 @@ height: 96.4%!important;
 {
 #content-desktop{display: block;}
 #content-mobile {display:none;}
-
-
 .signup
 {
 	height: auto;
@@ -593,20 +591,19 @@ font-size: 1.125em!important;
 }
 .content
 {
-	font-size: 2em;
+	font-size: 1.75em!important;
 }
 .font_change
 {
-	font-size: 1.125em;
+	font-size: 1em!important;
 }
 .img1{
-height: 96.4%!important;
+height: 91.4%!important;
 }
-
-/* .contract
+ .contact
 {
 	font-size: 1.5em!important;
-} */
+}
 }
 #wrapper {
             min-height: 100%;
