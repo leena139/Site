@@ -477,7 +477,8 @@ height: 95.4%!important;
 	.signup
 	{
 		height: auto;
-		font-size: 1.25em;
+		font-size: 1em!important;
+		padding: 3%!important;
 	}
 	.wrapper
 	{
@@ -485,14 +486,14 @@ height: 95.4%!important;
 		grid-template-columns: 55% 45%;
 	}
 	.content{
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 	.font_change
 	{
-		font-size: 0.875em;
+		font-size: 1em;
 	}
 	.img1{
-	height: 95.6%!important;
+	height: 90%!important;
 
 	}
 }
