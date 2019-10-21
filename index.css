@@ -73,24 +73,21 @@ body {
 .content
 {
 font-family: 'Comfortaa', cursive;
- /* background-color: black!important; */
+
 padding-top: 60px;
 padding-left:30px;
-padding-right: 30px; */
+padding-right: 30px;
 text-align: justify;
- font-size:1.25em ;  /* 24 */
- /* width:60%;  */
+font-size:1.25em ;  /* 24 */
 float: left;
 color:white;
 
+/* background-color: black!important; */
 /* add */
   /* height: 100vh; */
  /* height: calc(var(--vh, 1vh) * 100); */
 }
-.bg
-{
-	/* background-color: black; */
-}
+
 .leftPane{
 	width:60%;
 	/* padding-right: 0px; */
@@ -127,7 +124,7 @@ input[type=email] {
 	padding-left: 0;
 	font-size: 1.125em;
 	width: 250px;
-	color: white;
+
 
 }
 
@@ -426,7 +423,7 @@ height: 92.4%!important;
 
 
 /* Extra more*/
- @media (min-width: 1600px)
+ @media  (min-width: 1200px) and (max-width: 1599px)
 {
 #content-desktop{display: block;}
 #content-mobile {display:none;}
@@ -441,18 +438,18 @@ height: 92.4%!important;
 .wrapper
 {
 	display:grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 55% 45%;
 }
 .content{
-	font-size: 1.5625em;
+	font-size: 1.25em;
 }
 .font_change
 {
-	font-size: 1.25em;
+	font-size: 1em;
 }
 
 }
-@media (min-width: 1660px) and (max-width: 1900px)
+@media (min-width: 1600px) and (max-width: 1900px)
 {
 #content-desktop{display: block;}
 #content-mobile {display:none;}
