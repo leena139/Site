@@ -34,7 +34,7 @@ body {
 .topnav
 {
 	width:100%;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Comfortaa';
 	display: inline-block;
 	text-align: left;
 	position: fixed;
@@ -69,7 +69,7 @@ body {
 
 .content
 {
-font-family: 'Comfortaa', cursive;
+font-family: 'Comfortaa';
 padding-top: 36px;
 padding-left:30px;
 padding-right: 30px;
@@ -193,9 +193,9 @@ small {
 
 
 .contact {
-	padding-left: 3%!important;
-	padding-top: 3%!important;
-	padding-bottom: 3%!important;
+	padding-left: 4%;
+	padding-top: 4%;
+	padding-bottom: 4%;
 	text-align: left;
 	background-color: black;
 	font-size: 1.125em;
@@ -266,7 +266,11 @@ overflow: auto;
 	font-size: 0.875em;
 	}
 
-
+	.contact{
+		padding-left: 6%!important;
+		padding-top: 6%!important;
+		padding-bottom: 6%!important;
+	}
 }
 
 /* Small devices */
@@ -292,10 +296,6 @@ overflow: auto;
 			{
 				width: 100%!important;
 			}
-/* .paddingtop
-{
-	padding-top: 10em!important;
-} */
 
 			.img1{
 			width: 80%!important;
@@ -311,6 +311,11 @@ overflow: auto;
 			{
 		  width: 150px;
 			font-size: 0.875em;
+			}
+			.contact{
+				padding-left: 6%!important;
+				padding-top: 6%!important;
+				padding-bottom: 6%!important;
 			}
 
 
