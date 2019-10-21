@@ -196,15 +196,15 @@ small {
 
 
 .contact {
-  margin-bottom: 0px;
 	padding-left: 3%;
 	padding-top: 3%;
+	padding-bottom: 3%;
 	text-align: left;
 	background-color: black;
 	font-size: 1.125em;
   width: 100%;
 	color:white;
- height: 200px;;
+
 }
 
 .margin_fix {
