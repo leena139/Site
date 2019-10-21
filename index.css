@@ -580,12 +580,12 @@ height: 91.4%!important;
 .signup
 {
 	height: auto;
-	font-size: 1em!important;
+	font-size: 1.125em!important;
 }
 input[type=email]
 {
 width: 350px;
-font-size: 1em!important;
+font-size: 1.125em!important;
 }
 .wrapper
 {
