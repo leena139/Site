@@ -88,10 +88,7 @@ color:white;
  /* height: calc(var(--vh, 1vh) * 100); */
 }
 
-.leftPane{
-	width:60%;
-	/* padding-right: 0px; */
-}
+
 .scene1
 {
 margin-top: 56px;
@@ -148,14 +145,18 @@ a{
   width:100%;
 }
 
+div.signup{
+border-color: #9FEF31;
+border-width: medium;
+border-style: groove;}
+
+
 .signup {
 	height: 140px;
-	padding:  1.25em;
-	padding-top:20%;
+
+	padding:5%;
 	background-color: black;
-	border-color: #9FEF31;
-	border-width: medium;
-	border-style: groove;
+
 	/* background-color: rgba(0, 0, 0, 0.5); */
 }
 

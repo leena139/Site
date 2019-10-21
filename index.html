@@ -1,5 +1,5 @@
-           <!DOCTYPE html>
- <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"> -->
+<!DOCTYPE html>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"> -->
 <html lang="en">
 <head>
 <!--<meta charset="utf-8">-->
@@ -11,36 +11,35 @@
 
 <!-- Google Font -->
 <link href='https://fonts.googleapis.com/css?family=Roboto Mono'
-	rel='stylesheet'>
+ rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-	rel="stylesheet">
+ rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 
 <!--Let browser know website is optimized for mobile-->
 
 <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0" >
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	crossorigin="anonymous"></script>
+ integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+ crossorigin="anonymous"></script>
 
 <!-- Materialize css -->
 
 <!-- Compiled and minified CSS -->
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- -->
+-->
 <!-- Compiled and minified JavaScript
 <script
-	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+ src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
 
 <title>1Earth</title>
 
 <!-- EmailJS SDK -->
- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
 <script type="text/javascript">
-
 function sendEmail(emailAddress){
 emailjs.init("user_D2ZI6qlke48zlWEMBlCsf");  /* our  UserId */
 var template_params = {
@@ -48,17 +47,15 @@ var template_params = {
 "from_name": emailAddress,
 "message_html": "Test"
 }
-
 var service_id = "default_service";
 var template_id = "template_1rto4vYr";
 /* Service ID of the service through which the
 email should be sent. Reserved keyword ‘default_service’ is supported,
 and should be used to use the default service,
 which can be set and changed via EmailJS dashboard.
- */
+*/
 emailjs.send(service_id, template_id, template_params);
-
-	}
+ }
 </script>
 <!-- Scroll-1 Earth -->
 <!-- document.getElementById('now').innerHTML = '&nbsp;1Earth'; -->
@@ -68,23 +65,16 @@ emailjs.send(service_id, template_id, template_params);
 <!-- Email Validation -->
 
 <script type="text/javascript">
-
-
 function ValidateEmail(emailval)
 {
-
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 if(emailval.value.trim().match(mailformat))
 {
 document.sign.emailadd.focus();
-
-
 sendEmail(emailval.value.trim());
 alert("Thank you. You have been signed up for early access.");
 document.sign.emailadd.value="";
 return true;
-
-
 }
 else
 {
@@ -93,16 +83,14 @@ document.sign.emailadd.focus();
 return false;
 }
 }
-
 </script>
 
 
 <!-- <script type="text/javascript">
-
-  function myFunction() {
-  var w = window.innerWidth;
-  var h = window.innerHeight;
-  document.getElementById("flex-container").innerHTML = "Width: " + w + "<br>Height: " + h;
+ function myFunction() {
+ var w = window.innerWidth;
+ var h = window.innerHeight;
+ document.getElementById("flex-container").innerHTML = "Width: " + w + "<br>Height: " + h;
 }
 </script> -->
 
@@ -113,29 +101,25 @@ return false;
 <!-- topnav when the user clicks on the icon  -->
 
 <script>
-
-	function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
-	}
-
-
-
+ function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+     x.className += " responsive";
+   } else {
+     x.className = "topnav";
+   }
+ }
 </script>
 
 
 
 
 
-  <div class="topnav" id="myTopnav">
-            <!-- 1Earth -->
-			<span id="now">1Earth</span>
+ <div class="topnav" id="myTopnav">
+           <!-- 1Earth -->
+     <span id="now">1Earth</span>
 
-		</div>
+   </div>
 
 
 <div>
@@ -145,74 +129,74 @@ return false;
 <div class="wrapper" id="flex-container wrapper">
 
 <div id="content-desktop">
-          <span class="column scene1 img1 "  >
-              <img src="img\crpd-scene1.png" >
-          </span>
+         <span class="column scene1 img1 "  >
+             <img src="img\crpd-scene1.png" >
+         </span>
 </div>
 
 <div class="bg" >    <!--class="leftPane" -->
-          <div class="content" >
+         <div class="content" >
 
 
-            <p>
-            				The year is 2339 CE. Humans have been extinct for over 200 years due to a nuclear holocaust
-                    As the dust settles down in this post  apocalyptic world , an evolved life form has been discovered   Flopo, the nuclearly activated plants. </p>
+           <p>
+                   The year is 2339 CE. Humans have been extinct for over 200 years due to a nuclear holocaust
+                   As the dust settles down in this post  apocalyptic world , an evolved life form has been discovered   Flopo, the nuclearly activated plants. </p>
 
-          	<p>
-            				The Flopos have slowly evolved over the past 200 years and have started walking on Earth, surviving on the most valuable remaining resource on Earth  clean water. </p>
+           <p>
+                   The Flopos have slowly evolved over the past 200 years and have started walking on Earth, surviving on the most valuable remaining resource on Earth  clean water. </p>
 
-                    <span  id="img1">
-                              <div id="content-mobile" >
-                              <img src="img\crpd-scene1.png" >
-                              </div>
-                    </span>
+                   <span  id="img1">
+                             <div id="content-mobile" >
+                             <img src="img\crpd-scene1.png" >
+                             </div>
+                   </span>
 
-            				<p class="font_change">
-            				1Earth is a virtual reality, crypto  collectibles gaming platform. Buy, breed, and nurture Flopos, unique warrior plants, to explore, build, and dominate the new world!</p>
+                   <p class="font_change">
+                   1Earth is a virtual reality, crypto  collectibles gaming platform. Buy, breed, and nurture Flopos, unique warrior plants, to explore, build, and dominate the new world!</p>
 
-            				<p class="font_change">
-            			   1Earth utilizes smart contracts to develop the next generation of digital game assets. Enabling players to buy, trade, and sell the game assets in a free market economy. Players can also create, share, and monetize their own original content and gameplays. </p>
+                   <p class="font_change">
+                    1Earth utilizes smart contracts to develop the next generation of digital game assets. Enabling players to buy, trade, and sell the game assets in a free market economy. Players can also create, share, and monetize their own original content and gameplays. </p>
 
-            </div>
+           </div>
 
-                   <div >
-                       <div class="signup border-div"  >
-                         <span id="signup">
-                         <form name="sign" action="#"  >
 
-                           <p  class="margin_fix">Stay updated and get access to purchase Flopos in our initial token release.</p>
+                      <div class="signup border-div" id="signup" >
 
-                           <!-- <p><small>Be the first to try the game</small></p> -->
+                        <form name="sign" action="#"  >
 
-                           <input placeholder="Email address" type="email" name="emailadd" required="" style="border-bottom-color: White">
-                           <a href="#" onclick="ValidateEmail(document.sign.emailadd)" class="send_me padding_eight  ">Sign up</a>
+                          <p  class="margin_fix">Stay updated and get access to purchase Flopos in our initial token release.</p>
 
-                         </form>
-                         </span>
-                           </div>
-                       </div>
+                          <!-- <p><small>Be the first to try the game</small></p> -->
+
+                          <input placeholder="Email address" type="email" name="emailadd" required="" style="border-bottom-color: White">
+                          <a href="#" onclick="ValidateEmail(document.sign.emailadd)" class="send_me padding_eight  ">Sign up</a>
+
+                        </form>
+
+                          </div>
+
+
+
 
 
 
 
 </div>
-
 </div>
-
 
 <div class="contact">
 
-			<small>Join us at</small>
-			<p class="margin_fix">
-				Discord now
-			 <!-- Link -->
-				<a href="https://discord.gg/gufQAPc" class="z">
-					<img class="imglogo" src="img/Discord-Logo-Color .svg" >
-				</a>
-			</p>
-			<small  >or email us at <a class="mail"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mjgamestudios@mavjay.com" target="_blank">mjgamestudios@mavjay.com</a></small>
-			<!-- style=" word-break: break-word;" -->
-			<br><small> From MJGame Studios</small>
+     <small>Join us at</small>
+     <p class="margin_fix">
+       Discord now
+      <!-- Link -->
+       <a href="https://discord.gg/gufQAPc" class="z">
+         <img class="imglogo" src="img/Discord-Logo-Color .svg" >
+       </a>
+     </p>
+     <small  >or email us at <a class="mail"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mjgamestudios@mavjay.com" target="_blank">mjgamestudios@mavjay.com</a></small>
+     <!-- style=" word-break: break-word;" -->
+     <br><small> From MJGame Studios</small>
 </div>
 
 
