@@ -23,6 +23,11 @@ body {
 	color:white;
 	background-color: black!important;
 }
+
+grid-item:nth-child(3n) {
+  color:red;
+}
+
 .full-height {
   height: 100%;
 }
@@ -271,13 +276,6 @@ small {
 
 /* Small devices */
 @media (min-width: 500px) and (max-width: 767px){
-			/* body {
-					color:#DDDDDD;
-					background-color: red!important;
-					border-top: 2px solid #DDDDDD;
-			} */
-
-
 			#content-desktop{display: none;}
 			#content-mobile {display:block;}
 
@@ -288,15 +286,10 @@ small {
 			{
 				padding-top:20px;
 			}
-			.leftPane{
-				width:100%;
-			}
-			/* #content-desktop{display: block;}
-			#content-mobile {display:none;} */
+
 			.content
 			{
 				width: 100%!important;
-			/* padding-top: 35px!important; */
 			}
 
 
@@ -355,7 +348,7 @@ height: 300px!important;
 
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px)
+@media (min-width: 992px) and (max-width: 1180px)
 {
 #content-desktop{display: block;}
 #content-mobile {display:none;}
@@ -392,7 +385,7 @@ height: 92.4%!important;
 }
 }
 /* Extra large devices (large desktops, 1200px and up) */
- @media (min-width: 1200px)
+ @media (min-width: 1181px)
 {
 #content-desktop{display: block;}
 #content-mobile {display:none;}
@@ -403,6 +396,7 @@ height: 92.4%!important;
 .signup
 {
 	height: auto;
+	font-size: 1em;
 }
 .wrapper
 {
@@ -412,19 +406,24 @@ height: 92.4%!important;
 
 .content
 {
-	font-size: 1.5em;
+	font-size: 1.125em;
+}
+input[type=email]{
+	font-size: 1em;
 }
 .font_change
 {
-	font-size: 1.25em;
+	font-size: 0.875em;
+}
+.img1{
+height: 92.4%!important;
+
 }
 
-
 }
-
 
 /* Extra more*/
- @media  (min-width: 1200px) and (max-width: 1599px)
+ @media  (min-width: 1200px) and (max-width: 1399px)
 {
 #content-desktop{display: block;}
 #content-mobile {display:none;}
@@ -446,10 +445,45 @@ height: 92.4%!important;
 }
 .font_change
 {
-	font-size: 1em;
+	font-size: 1.125em;
 }
 
 }
+
+
+ @media (min-width: 1400px) and (max-width: 1599px)
+{
+	#content-desktop{display: block;}
+	#content-mobile {display:none;}
+
+	.flex-container{
+		height: auto;
+	}
+	.signup
+	{
+		height: auto;
+		font-size: 1.25em;
+	}
+	.wrapper
+	{
+		display:grid;
+		grid-template-columns: 55% 45%;
+	}
+	.content{
+		font-size: 1.5em;
+	}
+	.font_change
+	{
+		font-size: 0.875em;
+	}
+	.img1{
+	height: 93.4%!important;
+
+	}
+}
+
+
+
 @media (min-width: 1600px) and (max-width: 1900px)
 {
 #content-desktop{display: block;}
@@ -469,7 +503,7 @@ font-size: 1.25em;
 .wrapper
 {
 	display:grid;
-	grid-template-columns: 65% 35%;
+	grid-template-columns: 60% 40%;
 }
 .content
 {
@@ -477,10 +511,10 @@ font-size: 1.25em;
 }
 .font_change
 {
-	font-size: 1.25em;
+	font-size: 1.125em;
 }
 .img1{
-height: 92.4%!important;
+height: 93.4%!important;
 
 }
 }
