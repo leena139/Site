@@ -451,14 +451,14 @@ height: 85%!important;
 	grid-template-columns: 60% 40%;
 }
 .content1{
-	font-size: 1em!important;
+	font-size: 0.875em!important;
 }
 .font_change
 {
-	font-size: 0.875em!important;
+	font-size: 0.750em!important;
 }
 .img1{
-height: 70%!important;
+height: 60%!important;
 
 }
 }
