@@ -119,7 +119,7 @@ input[type=email] {
 	padding-left: 0;
 	font-size: 1.125em;
 	width: 250px;
-
+  color:white;
 
 }
 
@@ -208,7 +208,7 @@ small {
 	font-size: 1.125em;
   width: 100%;
 	color:white;
-overflow: auto;
+  overflow: auto;
 }
 
 .margin_fix {
