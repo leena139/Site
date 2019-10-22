@@ -464,7 +464,7 @@ height: 95%!important;
 	font-size: 0.750em!important;
 }
 .img1{
-height: 90%!important;
+height: 70%!important;
 
 }
 input[type=email]
@@ -492,7 +492,7 @@ font-size: 1em;
 	.wrapper
 	{
 		display:grid;
-		grid-template-columns: 55% 45%;
+		grid-template-columns: 60% 40%;
 	}
 	.content1{
 		font-size: 1em!important;
