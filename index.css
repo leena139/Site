@@ -412,12 +412,12 @@ height: 95%!important;
 .signup
 {
 	height: auto;
-	font-size: 1em;
+	font-size: 0.875em!important;
 }
 .wrapper
 {
 	display:grid;
-	grid-template-columns: 55% 45%;
+	grid-template-columns: 50% 50%!important;
 }
 
 .content1
@@ -429,7 +429,8 @@ height: 95%!important;
 	font-size: 0.750em!important;
 }
 .img1{
-height: 95%!important;
+/* height: 95%!important; */
+width: 97%!important;
 }
 .contact{
 	font-size: 1em;
@@ -454,7 +455,11 @@ height: 95%!important;
 .wrapper
 {
 	display:grid;
-	grid-template-columns: 63% 37%;
+	grid-template-columns: 50% 50%;
+}
+.content{
+	padding-right: 10%!important;
+	padding-left: 3%!important;
 }
 .content1{
 	font-size: 0.875em!important;
@@ -464,8 +469,8 @@ height: 95%!important;
 	font-size: 0.750em!important;
 }
 .img1{
-height: 70%!important;
-
+/* height: 70%!important; */
+width: 95%!important;
 }
 input[type=email]
 {
@@ -502,7 +507,8 @@ font-size: 1em;
 		font-size: 0.875em!important;
 	}
 	.img1{
-	height: 90%!important;
+	/* height: 90%!important; */
+	width: 98%!important;
 	}
 }
 
@@ -538,8 +544,8 @@ font-size: 1em;
 	font-size: 1.125em;
 }
 .img1{
-height: 96.4%!important;
-
+/* height: 96.4%!important; */
+width: 98%!important;
 }
 }
 
@@ -574,8 +580,8 @@ font-size: 1.125em;
 	font-size: 1.125em;
 }
 .img1{
-height: 91.4%!important;
-
+/* height: 91.4%!important; */
+width: 98%!important;
 }
 }
 
