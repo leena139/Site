@@ -497,7 +497,7 @@ font-size: 1em;
 	.wrapper
 	{
 		display:grid;
-		grid-template-columns: 60% 40%;
+		grid-template-columns: 50% 50%;
 	}
 	.content1{
 		font-size: 1em!important;
@@ -533,7 +533,7 @@ font-size: 1em;
 .wrapper
 {
 	display:grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 50% 50%;
 }
 .content1
 {
@@ -569,7 +569,7 @@ font-size: 1.125em;
 .wrapper
 {
 	display:grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 50% 50%;
 }
 .content1
 {
