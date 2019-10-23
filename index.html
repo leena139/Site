@@ -2,7 +2,7 @@
 <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"> -->
 <html lang="en">
 <head>
-<!--<meta charset="utf-8">-->
+<meta charset="utf-8">
 <meta charset="ISO-8859-1">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,6 +31,7 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <!-- Custom Theme JavaScript -->
+
   <script src='google-sheet.js'></script>
 
 
@@ -64,7 +65,7 @@ $('#submit-form').on('click', function(e) {
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    // do something
+    alert('Done ...')
   );
 })
 
@@ -91,8 +92,8 @@ email should be sent. Reserved keyword ‘default_service’ is supported,
 and should be used to use the default service,
 which can be set and changed via EmailJS dashboard.
 */
-emailjs.send(service_id, template_id, template_params);
- }
+<!-- emailjs.send(service_id, template_id, template_params);
+ } -->
 
 <!-- Scroll-1 Earth -->
 <!-- document.getElementById('now').innerHTML = '&nbsp;1Earth'; -->
