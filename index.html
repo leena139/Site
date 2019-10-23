@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <!--<meta charset="utf-8">-->
-<meta charset="ISO-8859-1">]
+<meta charset="ISO-8859-1">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -113,7 +113,37 @@ return false;
  }
 </script>
 
+<script>
 
+var $form = $('form#test-form'),
+    url = 'var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+
+</script>
 
 
 
@@ -162,7 +192,7 @@ return false;
 
            </div>
 
-
+<form id="test-form">
 
   <div class="signup border-div" id="signup">
   <form name="sign" action="#">
@@ -171,25 +201,28 @@ return false;
 
     <!-- <p><small>Be the first to try the game</small></p> -->
 
-    <input placeholder="Email address" type="email" name="emailadd" required="" style="border-bottom-color: White">
-    <a href="#" onclick="ValidateEmail(document.sign.emailadd)" class="send_me padding_eight  ">Sign up</a>
+    <input placeholder="Email address"  name="email_id" type="email" name="emailadd" required="" style="border-bottom-color: White">
+    <a href="#" onclick="ValidateEmail(document.sign.emailadd)" class="send_me padding_eight" id="submit-form">Sign up</a>
 
   </form>
-</div>
+   </div>
+
+</form>
+
 </div>
 </div>
 </div>
 
 <div class="contact">
 
-     <small>Join us at</small>
+     <small>
      <p class="margin_fix">
-       Discord now
+       Join us on Discord now
       <!-- Link -->
        <a href="https://discord.gg/gufQAPc" class="z" target="_blank">
          <img class="imglogo" src="img/Discord-Logo-Color .svg" >
        </a>
-     </p>
+     </p></small>
      <small  >or email us at <a class="mail"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mjgamestudios@mavjay.com" target="_blank">mjgamestudios@mavjay.com</a></small>
      <!-- style=" word-break: break-word;" -->
      <br><small> From MJGame Studios</small>
