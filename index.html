@@ -52,7 +52,7 @@ $('#submit-form').on('click', function(e) {
     dataType: "json",
     data: $form.serializeObject()
   }).success(
-    // do something
+     alert('Done ...')
   );
 })'
 
@@ -72,8 +72,8 @@ $('#submit-form').on('click', function(e) {
 
 
 
-<!-- EmailJS SDK -->
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<!-- EmailJS SDK  temp -->
+<!-- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
 <script type="text/javascript">
 function sendEmail(emailAddress){
@@ -85,6 +85,7 @@ var template_params = {
 }
 var service_id = "default_service";
 var template_id = "template_1rto4vYr";
+</script> -->
 /* Service ID of the service through which the
 email should be sent. Reserved keyword ‘default_service’ is supported,
 and should be used to use the default service,
@@ -92,7 +93,7 @@ which can be set and changed via EmailJS dashboard.
 */
 emailjs.send(service_id, template_id, template_params);
  }
-</script>
+
 <!-- Scroll-1 Earth -->
 <!-- document.getElementById('now').innerHTML = '&nbsp;1Earth'; -->
 
