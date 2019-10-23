@@ -38,6 +38,41 @@
 
 <title>1Earth</title>
 
+
+
+<script>
+var $form = $('form#test-form'),
+    url = 'var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+
+</script>
+
+
+
 <!-- EmailJS SDK -->
 <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
@@ -88,7 +123,7 @@ return false;
 </script>
 
 
-<!-- <script type="text/javascript">
+ <!-- <script type="text/javascript">
  function myFunction() {
  var w = window.innerWidth;
  var h = window.innerHeight;
@@ -113,37 +148,7 @@ return false;
  }
 </script>
 
-<script>
 
-var $form = $('form#test-form'),
-    url = 'var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/abcdefghijklmnopqrstuvwxyz1234567890/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
-
-</script>
 
 
 
