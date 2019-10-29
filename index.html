@@ -1,84 +1,54 @@
-<!DOCTYPE html>
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"> -->
+<!-- !DOCTYPE html> -->
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta charset="ISO-8859-1">
+  <!--<meta charset="utf-8">-->
+  <meta charset="ISO-8859-1">
+
+  <!--Css Links-->
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0" >
+
+  <!-- Google Font -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto Mono'
+   rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+   rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
+
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!--Css Links-->
 
-<link rel="stylesheet" type="text/css" href="index.css">
 
-<!-- Google Font -->
-<link href='https://fonts.googleapis.com/css?family=Roboto Mono'
- rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
- rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 
- <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 
-<!--Let browser know website is optimized for mobile-->
-
-<meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0" >
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
  crossorigin="anonymous"></script>
 
-
-
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!-- Custom Theme JavaScript -->
 
-  <script src='google-sheet.js'></script>
-
-
-
-<title>1Earth</title>
-
-
-
-<script>
-var $form = $('form#test-form'),
-    url = 'var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbzLdCjn1ZI2U_CitWZ5zNEjcki5qt0hPkSLdtKS544r7KVx1M5P/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "POST",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-     alert('Done ...')
-  );
-})'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "POST",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    alert('Done ...')
-  );
-})
-
-</script>
-
+ <title>1Earth</title>
 
 
 <!-- EmailJS SDK  temp -->
-<!-- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+ <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
 <script type="text/javascript">
 function sendEmail(emailAddress){
-emailjs.init("user_D2ZI6qlke48zlWEMBlCsf");  /* our  UserId */
+ emailjs.init("user_D2ZI6qlke48zlWEMBlCsf");  /* our  UserId  temp comment*/
 var template_params = {
 "reply_to": emailAddress,
 "from_name": emailAddress,
@@ -86,23 +56,22 @@ var template_params = {
 }
 var service_id = "default_service";
 var template_id = "template_1rto4vYr";
-</script> -->
-/* Service ID of the service through which the
-email should be sent. Reserved keyword ‘default_service’ is supported,
-and should be used to use the default service,
-which can be set and changed via EmailJS dashboard.
-*/
-<!-- emailjs.send(service_id, template_id, template_params);
- } -->
+emailjs.send(service_id, template_id, template_params);
+//  Service ID of the service through which the
+// email should be sent. Reserved keyword ‘default_service’ is supported,
+// and should be used to use the default service,
+// which can be set and changed via EmailJS dashboard.
 
-<!-- Scroll-1 Earth -->
-<!-- document.getElementById('now').innerHTML = '&nbsp;1Earth'; -->
+ }
+</script>
 
-<!-- </script>  -->
+<!-- Scroll-1 Earth
+  <script> document.getElementById('now').innerHTML = '&nbsp;1Earth';</script> -->
+
 
 <!-- Email Validation -->
 
-<script type="text/javascript">
+- <script type="text/javascript">
 function ValidateEmail(emailval)
 {
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -123,17 +92,8 @@ return false;
 }
 </script>
 
-
- <!-- <script type="text/javascript">
- function myFunction() {
- var w = window.innerWidth;
- var h = window.innerHeight;
- document.getElementById("flex-container").innerHTML = "Width: " + w + "<br>Height: " + h;
-}
-</script> -->
-
-
 </head>
+
 <body>
 
 <!-- topnav when the user clicks on the icon  -->
@@ -152,35 +112,31 @@ return false;
 
 
 
-
+ <!-- 1Earth -->
  <div class="topnav" id="myTopnav">
-           <!-- 1Earth -->
      <span id="now">1Earth</span>
-
-   </div>
+</div>
 
 
 <div>
 
+ <div class="wrapper" id="flex-container wrapper noborder">
 
-
-<div class="wrapper" id="flex-container wrapper noborder">
-
-<div id="content-desktop">
+  <div id="content-desktop">
          <span class="column scene1 img1"  >
              <img src="img\crpd-scene1.png" >
          </span>
-</div>
+  </div>
 
-<div>
+ <div>
          <div class="content">
 
 
-       <p class="content1">
+          <p class="content1">
                    The year is 2339 CE. Humans have been extinct for over 200 years due to a nuclear holocaust
                    As the dust settles down in this post  apocalyptic world , an evolved life form has been discovered   Flopo, the nuclearly activated plants. </p>
 
-        <p class="content1">
+          <p class="content1">
                    The Flopos have slowly evolved over the past 200 years and have started walking on Earth, surviving on the most valuable remaining resource on Earth  clean water. </p>
 
                    <span  id="img1">
@@ -188,7 +144,8 @@ return false;
                              <img src="img\crpd-scene1.png" >
                              </div>
                    </span>
-                  <div >
+
+                  <div>
 
                    <p class="font_change">
                    1Earth is a virtual reality, crypto  collectibles gaming platform. Buy, breed, and nurture Flopos, unique warrior plants, to explore, build, and dominate the new world!</p>
@@ -196,45 +153,89 @@ return false;
                    <p class="font_change">
                     1Earth utilizes smart contracts to develop the next generation of digital game assets. Enabling players to buy, trade, and sell the game assets in a free market economy. Players can also create, share, and monetize their own original content and gameplays. </p>
 
-           </div>
+                 </div>
 
 
 
   <div class="signup border-div" id="signup">
-  <form name="sign" action="#" id="test-form">
+
+  <form  name="sign" action="#" id="test-form" >
 
     <p  class="margin_fix">Stay updated and get access to purchase Flopos in our initial token release.</p>
 
-    <!-- <p><small>Be the first to try the game</small></p> -->
-
-    <input placeholder="Email address"  name="emailadd" type="email" name="email_id" required="" style="border-bottom-color: White">
-    <a href="#" id="submit-form" onclick="ValidateEmail(document.sign.emailadd)"  class="send_me padding_eight">Sign up</a>
-
-  </form>
+   <input type="email" placeholder="Email address"  name="emailadd" required="" style="border-bottom-color: White">
+   <a href="#"  id="submit-form"   class="send_me padding_eight" onclick="ValidateEmail(document.sign.emailadd)">Sign up</a>
+<!--
+  </form> -->
    </div>
 
+    <!-- <form id="test-form">
 
+     <div>
+       <label>Email</label>
+       <input type="text" name="emailadd" placeholder="Field 1"/>
+     </div>
+     <div>
+       <button type="submit" id="submit-form">Submit</button>
+     </div>
+
+   </form> -->
 
 </div>
 </div>
 </div>
-
 <div class="contact">
 
      <small>
      <p class="margin_fix">
        Join us on Discord now
-      <!-- Link -->
        <a href="https://discord.gg/gufQAPc" class="z" target="_blank">
          <img class="imglogo" src="img/Discord-Logo-Color .svg" >
        </a>
-     </p></small>
-     <small  >or email us at <a class="mail"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mjgamestudios@mavjay.com" target="_blank">mjgamestudios@mavjay.com</a></small>
+     </p>
+   </small>
+     <small>or email us at <a class="mail"  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mjgamestudios@mavjay.com" target="_blank">mjgamestudios@mavjay.com</a></small>
      <!-- style=" word-break: break-word;" -->
      <br><small> From MJGame Studios</small>
 </div>
-
-
-
 </body>
+
+<script>
+var $form = $('form#test-form'),
+url = 'https://script.google.com/macros/s/AKfycbwFSZk1T8G5GKXa839zmX3HaNHRDCmt2wej3lEQ1dkKjakLj3I/exec'
+
+$('#submit-form').on('click', function(e) {
+ debugger
+ e.preventDefault();
+$.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serialize()
+}).done(function(resp){
+  console.log("success",resp)
+}).fail(function(err) {
+console.log("error",err);
+}).always(function() {
+  //do  something whether request is ok or fail
+});
+})
+</script>
+<!-- // $('#submit-form').on('click', function(e) {
+//
+//   e.preventDefault();
+//   $.ajax({
+//     url: url,
+//     method: "GET",
+//     dataType: "json",
+//     data: $form.serialize()
+// }).success(
+//     alert("Done..")
+//   );
+// }) -->
+
+
+
+
+
 </html>
