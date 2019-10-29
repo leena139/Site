@@ -1,5 +1,5 @@
-<!-- !DOCTYPE html> -->
- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+ !DOCTYPE html>
+ <!-- <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN"> -->
 <html lang="en">
 <head>
   <!--<meta charset="utf-8">-->
@@ -28,7 +28,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-<script
+<!-- <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
@@ -36,61 +36,13 @@
 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
- crossorigin="anonymous"></script>
+ crossorigin="anonymous"></script> -->
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
  <title>1Earth</title>
 
 
-<!-- EmailJS SDK  temp -->
- <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
-<script type="text/javascript">
-function sendEmail(emailAddress){
- emailjs.init("user_D2ZI6qlke48zlWEMBlCsf");  /* our  UserId  temp comment*/
-var template_params = {
-"reply_to": emailAddress,
-"from_name": emailAddress,
-"message_html": "Test"
-}
-var service_id = "default_service";
-var template_id = "template_1rto4vYr";
-emailjs.send(service_id, template_id, template_params);
-//  Service ID of the service through which the
-// email should be sent. Reserved keyword ‘default_service’ is supported,
-// and should be used to use the default service,
-// which can be set and changed via EmailJS dashboard.
-
- }
-</script>
-
-<!-- Scroll-1 Earth
-  <script> document.getElementById('now').innerHTML = '&nbsp;1Earth';</script> -->
-
-
-<!-- Email Validation -->
-
-- <script type="text/javascript">
-function ValidateEmail(emailval)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(emailval.value.trim().match(mailformat))
-{
-document.sign.emailadd.focus();
-sendEmail(emailval.value.trim());
-alert("Thank you. You have been signed up for early access.");
-document.sign.emailadd.value="";
-return true;
-}
-else
-{
-alert("Please Enter Valid Email..");
-document.sign.emailadd.focus();
-return false;
-}
-}
-</script>
 
 </head>
 
@@ -164,9 +116,9 @@ return false;
     <p  class="margin_fix">Stay updated and get access to purchase Flopos in our initial token release.</p>
 
    <input type="email" placeholder="Email address"  name="emailadd" required="" style="border-bottom-color: White">
-   <a href="#"  id="submit-form"   class="send_me padding_eight" onclick="ValidateEmail(document.sign.emailadd)">Sign up</a>
-<!--
-  </form> -->
+   <a href="#"  id="submit-form"  class="send_me padding_eight" onclick="ValidateEmail(document.sign.emailadd)" >Sign up</a>
+<!-- -->
+  </form>
    </div>
 
     <!-- <form id="test-form">
@@ -199,43 +151,75 @@ return false;
      <br><small> From MJGame Studios</small>
 </div>
 </body>
+<!-- EmailJS SDK  temp -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
-<script>
-var $form = $('form#test-form'),
-url = 'https://script.google.com/macros/s/AKfycbwFSZk1T8G5GKXa839zmX3HaNHRDCmt2wej3lEQ1dkKjakLj3I/exec'
+<script type="text/javascript">
+function sendEmail(emailAddress){
+ emailjs.init("user_D2ZI6qlke48zlWEMBlCsf");  /* our  UserId  temp comment*/
+var template_params = {
+"reply_to": emailAddress,
+"from_name": emailAddress,
+"message_html": "Test"
+}
+var service_id = "default_service";
+var template_id = "template_1rto4vYr";
+emailjs.send(service_id, template_id, template_params);
+//  Service ID of the service through which the
+// email should be sent. Reserved keyword ‘default_service’ is supported,
+// and should be used to use the default service,
+// which can be set and changed via EmailJS dashboard.
 
-$('#submit-form').on('click', function(e) {
- debugger
- e.preventDefault();
-$.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serialize()
-}).done(function(resp){
-  console.log("success",resp)
-}).fail(function(err) {
-console.log("error",err);
-}).always(function() {
-  //do  something whether request is ok or fail
-});
-})
+ }
 </script>
-<!-- // $('#submit-form').on('click', function(e) {
-//
-//   e.preventDefault();
-//   $.ajax({
-//     url: url,
-//     method: "GET",
-//     dataType: "json",
-//     data: $form.serialize()
-// }).success(
-//     alert("Done..")
-//   );
-// }) -->
 
+<!-- Send email Add to google sheet -->
+  <script type="text/javascript">
+  function sendToSheet()
+  {
+  var $form = $('form#test-form'),
+  url = 'https://script.google.com/macros/s/AKfycbwFSZk1T8G5GKXa839zmX3HaNHRDCmt2wej3lEQ1dkKjakLj3I/exec'
 
+  // $('#submit-form').on('click', function(e) {
+  //  alert("Inside SendToSheet2()");
 
+  var jqxhr =$.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serializeObject()
+  }).done(function(resp){
+  console.log("success",resp)
+})
+  }
+
+  </script>
+
+<!-- Email Validation -->
+  <script type="text/javascript">
+function ValidateEmail(emailval)
+{
+   // this.preventDefault();
+
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(emailval.value.trim().match(mailformat))
+{
+document.sign.emailadd.focus();
+sendEmail(emailval.value.trim());
+alert("Thank you. You have been signed up for early access.");
+sendToSheet();
+// alert("inside ValidateEmail--send() function");
+document.sign.emailadd.value="";
+return true;
+}
+else
+{
+alert("Please Enter Valid Email..");
+document.sign.emailadd.focus();
+return false;
+}
+}
+</script>
 
 
 </html>
