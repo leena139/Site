@@ -125,8 +125,6 @@ input[type=email]:focus {
 	border-bottom: 4px solid white;
 }
 
-
-
 a{
 	text-decoration: none;
 }
@@ -138,7 +136,6 @@ a{
 	font-size: 1.25em;
   font-family: 'Roboto Mono';
   width:100%;
-
 }
 
 div.signup{
@@ -155,7 +152,6 @@ position:inherit;
 	border-right-color: white;
 	padding:5%;
 	background-color: black;
-
 	/* background-color: rgba(0, 0, 0, 0.5); */
 }
 
@@ -203,7 +199,6 @@ small {
 	color:white;
   overflow: auto;
   background-color: black
-
 }
 
 .margin_fix {
