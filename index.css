@@ -21,15 +21,15 @@ html {
 }
 
 body {
-	/* padding: 0; */
-	/* margin: 0; */
-  /* margin-left:1.667em!important;
-	margin-right:1.667em!important; */
-width: 100%;
+  width: 100%;
   height: 100%;
 	color:white;
 	background-color: black!important;
 
+	/* padding: 0; */
+	/* margin: 0; */
+	/* margin-left:1.667em!important;
+	margin-right:1.667em!important; */
 }
 
 
@@ -78,8 +78,8 @@ width: 100%;
 .content
 {
 font-family: 'Comfortaa';
- padding-top: 32px;  /* 56 */
-padding-left:30px;
+padding-top: 32px;  /* 56 */
+
 /* padding-right: 30px; */
 text-align: justify;
 font-size:1.25em ;  /* 24 */
@@ -88,7 +88,10 @@ color:white;
 /* border-left:none;
 border-right:none; */
 }
-
+#padd-left
+{
+	padding-left:30px;
+}
 
 .scene1
 {
@@ -301,7 +304,7 @@ padding-bottom: 0px!important;
 	}
 
 	.contact{
-		padding-left: 9%!important;
+		/* padding-left: 9%!important; */
 		padding-top: 9%!important;
 		padding-bottom: 9%!important;
 	}
@@ -347,7 +350,7 @@ padding-bottom: 0px!important;
 			font-size: 0.875em;
 			}
 			.contact{
-				padding-left: 6%!important;
+				/* padding-left: 6%!important; */
 				padding-top: 6%!important;
 				padding-bottom: 6%!important;
 			}
