@@ -23,9 +23,9 @@ html {
 body {
 	/* padding: 0; */
 	/* margin: 0; */
-  margin-left:1.667em!important;
-	margin-right:1.667em!important;
-	min-width: 100%;
+  /* margin-left:1.667em!important;
+	margin-right:1.667em!important; */
+width: 100%;
   height: 100%;
 	color:white;
 	background-color: black!important;
@@ -241,6 +241,9 @@ padding-bottom: 0px!important;
 	margin-top: 0;
 }
 
+.margin_fix2 {
+	margin-top: 24px!important;
+}
 .padding_eight {
 	padding: 8px;
 }
