@@ -156,8 +156,8 @@ body {
 
 
 .zoom {
-  transition: transform .2s;
-  margin: 0 auto;
+  transition: transform .2s!important;
+  margin: 0 auto!important;
 	/* min-width:100%; */
 }
 
