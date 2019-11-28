@@ -16,9 +16,7 @@
   <!--<meta charset="utf-8">-->
   <meta charset="ISO-8859-1">
 
-<!-- popup -->
-<link href="dist/attention.css" rel="stylesheet">
-<script src="dist/attention.js"></script>
+
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -285,28 +283,8 @@ emailjs.send(service_id, template_id, template_params);
   console.log("success",resp)
 })
   }
-
   </script>
 
-   <!-- <script type="text/javascript">
-  function callModel1()
-  {
-   alert("CallModel1()");
-   document.getElementById("myModal").showModal();
-    // $("myModal").modal('show');
-  // window.showModalDialog("hii");
-
-  }
-
-  </script> -->
-
-  <!-- <script type="text/javascript">
-  function callModel2()
-  {
-  document.getElementById("myDialog2").showModal();
-  } -->
-
-  </script>
 <!-- Email Validation -->
 <script type="text/javascript">
 function ValidateEmail(emailval)
@@ -316,8 +294,8 @@ if(emailval.value.trim().match(mailformat))
 {
 document.sign.emailadd.focus();
 sendEmail(emailval.value.trim());
-alert("Thank you. You have been signed up for early access.");
-// callModel1();
+// alert("Thank you. You have been signed up for early access.");
+LoadModalDiv();
 sendToSheet();
 // alert("inside ValidateEmail--send() function");
 document.sign.emailadd.value="";
@@ -325,8 +303,7 @@ return true;
 }
 else
 {
-  LoadModalDiv();
-// callModel1();
+  LoadModalDiv1();
 // alert("Please Enter Valid Email..");
 document.sign.emailadd.focus();
 return false;
@@ -337,13 +314,23 @@ return false;
 <div id = "divBackground" class="modal" style="height:50%;width:40%;margin-left:30%" >
 
   <div class="modal-content" >
-    <span class="close">&times;</span>
-    <p>&nbsp;Please Enter Valid Email..</p>
+    <p>Thank you.You have been signed up for early access..
+    <span class="close">&times;</span></p>
+  </div>
+
+</div>
+
+<div id = "divBackground1" class="modal" style="height:50%;width:40%;margin-left:30%" >
+
+  <div class="modal-content1" >
+    <p>Please Enter Valid Email address..
+      <span class="close1">&times;</span> </p>
 
 
   </div>
 
 </div>
+
 
 <script type = "text/javascript">
 
@@ -369,6 +356,33 @@ return false;
     }
 
 </script>
+
+
+<script type = "text/javascript">
+
+    function LoadModalDiv1()
+
+    {
+        var bcgDiv1 = document.getElementById("divBackground1");
+        bcgDiv1.style.display="block";
+
+      var span1 = document.getElementsByClassName("close1")[0];
+        // When the user clicks on <span> (x), close the modal
+    span1.onclick = function() {
+    bcgDiv1.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == bcgDiv1) {
+    bcgDiv1.style.display = "none";
+    }
+    }
+
+    }
+
+</script>
+
 
 
 
