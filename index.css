@@ -15,7 +15,7 @@ body{
   width: calc(4101px/3);
   height:641px;
   background: url(bg1.png);
-  animation:animate 1s  steps(3) infinite;
+  animation:animate 1s steps(3) infinite;
 
 }
 
