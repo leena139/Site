@@ -11,7 +11,7 @@ body{
 .box
 {
   /* transform: translate(-50%,-50%) ; */
-  transition-timing-function:ease;
+  transition-timing-function:linear;
   width: calc(4101px/3);
   height:641px;
   background: url(bg1.png);
@@ -48,7 +48,7 @@ to
   width: calc(1000px/4);
   height:250px;
   transform: translate(-50%,-50%) ;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in-out;
 }
 
 .box1:hover {
