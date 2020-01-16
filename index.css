@@ -16,7 +16,7 @@ body{
   height:641px;
   /* width: calc(4101px/3);
   height:641px; */
-  background: url(bgsimple.png);
+  background: url(background-01.png);
   /* animation:animate 1s steps(3) infinite; */
 
 }
@@ -50,11 +50,11 @@ to
   width: calc(1200px/3);
   height:500px;
   transform: translate(-50%,-50%) ;
-  transition-timing-function: ease-in-out;
+  /* transition-timing-function: linear; */
 }
 
 .box1:hover {
- animation:animate1 1s  steps(3) infinite;
+ animation:animate1 1s steps(3) infinite;
 }
 
 
@@ -63,11 +63,40 @@ to
 from
   {
     background-position: 0  ;
-
   }
 to
   {
     background-position:1200px ;
+  }
+
+}
+
+.box2
+{
+  position: absolute;
+  top:80%;
+  right:70%;
+  background: url(css_sprites15.png);
+  width: calc(750px/3);
+  height:250px;
+  transform: translate(-50%,-50%) ;
+  transition-timing-function: linear;
+}
+
+.box2:hover {
+ animation:animate3 1s steps(3) infinite;
+}
+
+
+@keyframes animate3
+{
+from
+  {
+    background-position: 0  ;
+  }
+to
+  {
+    background-position:750px ;
   }
 
 }
