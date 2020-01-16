@@ -12,10 +12,12 @@ body{
 {
   /* transform: translate(-50%,-50%) ; */
   transition-timing-function:linear;
-  width: calc(4101px/3);
+  width:1368px;
   height:641px;
-  background: url(bg1.png);
-  animation:animate 1s steps(3) infinite;
+  /* width: calc(4101px/3);
+  height:641px; */
+  background: url(bgsimple.png);
+  /* animation:animate 1s steps(3) infinite; */
 
 }
 
@@ -42,17 +44,17 @@ to
 .box1
 {
   position: absolute;
-  top:80%;
-  right:70%;
-  background: url(css_sprites15.png);
-  width: calc(1000px/4);
-  height:250px;
+  top:60%;
+  left:85%;
+  background: url(str1.png);
+  width: calc(1200px/3);
+  height:500px;
   transform: translate(-50%,-50%) ;
   transition-timing-function: ease-in-out;
 }
 
 .box1:hover {
- animation:animate1 1s  steps(4) infinite;
+ animation:animate1 1s  steps(3) infinite;
 }
 
 
@@ -60,12 +62,12 @@ to
 {
 from
   {
-    background-position: 0 5px ;
+    background-position: 0  ;
 
   }
 to
   {
-    background-position:1000px 20px;
+    background-position:1200px ;
   }
 
 }
