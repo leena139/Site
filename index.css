@@ -50,11 +50,11 @@ to
   width: calc(1600px/4);
   height:500px;
   transform: translate(-50%,-50%) ;
-  /* transition-timing-function: linear; */
+   transition-timing-function: linear;
 }
 
 .box1:hover {
- animation:animate1 1s steps(4) infinite;
+ animation:animate1 800ms steps(4) infinite;
 }
 
 
