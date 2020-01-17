@@ -54,7 +54,7 @@ to
 }
 
 .box1:hover {
- animation:animate1 800ms steps(4) infinite;
+ animation:animate1 800ms steps(4) 1;
 }
 
 
