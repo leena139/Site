@@ -46,15 +46,15 @@ to
   position: absolute;
   top:60%;
   left:85%;
-  background: url(str1.png);
-  width: calc(1200px/3);
+  background: url(4img.png);
+  width: calc(1600px/4);
   height:500px;
   transform: translate(-50%,-50%) ;
   /* transition-timing-function: linear; */
 }
 
 .box1:hover {
- animation:animate1 1s steps(3) infinite;
+ animation:animate1 1s steps(4) infinite;
 }
 
 
@@ -66,7 +66,7 @@ from
   }
 to
   {
-    background-position:1200px ;
+    background-position:1600px ;
   }
 
 }
