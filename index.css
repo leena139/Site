@@ -16,7 +16,7 @@ body{
 width: calc(15059px/11);
 height:641px;
 background: url(bg1234.png);
-animation:animate 2s steps(11) infinite;
+animation:animate 2s steps(11) 1;
 }
 
 @keyframes animate
