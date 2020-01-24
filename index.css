@@ -1,0 +1,105 @@
+body{
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+
+  /* background: url("shop_bg_snow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.box
+{
+  position: absolute;
+ transition-timing-function:linear;
+width: calc(20535px/15);
+height:641px;
+background: url(f1.png);
+animation:animate 3s steps(15) 2;
+}
+
+@keyframes animate
+{
+from
+  {
+    background-position:0px;
+  }
+to
+  {
+    background-position:20535px;
+  }
+}
+
+.box:hover {
+  /* transform: scale(2); */
+  cursor: pointer;
+}
+
+
+.box1
+{
+  position: absolute;
+  top:80%;
+  right:70%;
+  background: url(eyes.png);
+  width: calc(1250px/5);
+  height:250px;
+  transform: translate(-50%,-50%) ;
+  transition-timing-function: linear;
+}
+.box1:hover {
+ animation:animate1 800ms steps(5) infinite;
+}
+
+
+@keyframes animate1
+{
+from
+  {
+    background-position: 0  ;
+  }
+to
+  {
+    background-position:1250px ;
+  }
+}
+
+.box2
+{
+  position: absolute;
+  top:80%;
+  right:70%;
+  background: url(css_sprites15.png);
+  width: calc(750px/3);
+  height:250px;
+  transform: translate(-50%,-50%) ;
+  transition-timing-function: linear;
+}
+
+.box2:hover {
+ animation:animate3 1s steps(3) infinite;
+}
+
+@keyframes animate3
+{
+from
+  {
+    background-position: 0;
+  }
+to
+  {
+    background-position:750px ;
+  }
+}
+
+.need1
+{
+  position: absolute;
+  top:20%;
+  right:32%;
+  margin-right:10%;
+  width:112px;
+  height:212px;
+  background: url(bg-needbar-02.png);
+}
