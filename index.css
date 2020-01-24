@@ -11,13 +11,13 @@ body{
 }
 .box
 {
-  position: absolute;
- transition-timing-function:linear;
+position: absolute;
+transition-timing-function:linear;
 width: calc(20535px/15);
 height:641px;
 background: url(f1.png);
 animation:animate 3s steps(15) 2;
-animation-delay: 3s;
+animation-delay: 2s;
 
 }
 
@@ -44,15 +44,15 @@ to
   position: absolute;
   top:80%;
   right:70%;
-  background: url(eyes1.png);
-  width: calc(1250px/5);
+  background: url(seq-img.png);
+  width: calc(2250px/9);
   height:250px;
   transform: translate(-50%,-50%) ;
   transition-timing-function: linear;
 
 }
 .box1:hover {
- animation:animate1 800ms steps(5) 2;
+ animation:animate1 2s steps(9) 2;
 
 }
 
@@ -61,11 +61,11 @@ to
 {
 from
   {
-    background-position: 0  ;
+    background-position: 0;
   }
 to
   {
-    background-position:1250px  ;
+    background-position:2250px  ;
   }
 }
 
