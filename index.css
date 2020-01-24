@@ -49,7 +49,7 @@ to
   transition-timing-function: linear;
 }
 .box1:hover {
- animation:animate1 800ms steps(5) infinite;
+ animation:animate1 800ms steps(5) 2;
 }
 
 
