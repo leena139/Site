@@ -17,6 +17,8 @@ width: calc(20535px/15);
 height:641px;
 background: url(f1.png);
 animation:animate 3s steps(15) 2;
+animation-delay: 3s;
+
 }
 
 @keyframes animate
@@ -47,9 +49,11 @@ to
   height:250px;
   transform: translate(-50%,-50%) ;
   transition-timing-function: linear;
+
 }
 .box1:hover {
  animation:animate1 800ms steps(5) 2;
+
 }
 
 
@@ -61,7 +65,7 @@ from
   }
 to
   {
-    background-position:1250px ;
+    background-position:1250px  ;
   }
 }
 
