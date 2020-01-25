@@ -52,7 +52,7 @@ to
 
 }
 .box1:hover {
- animation:animate1 0.5s steps(9) infinite;
+ animation:animate1 0.5s steps(9) 2;
 /* transition-delay: 1s; */
 animation-delay: : 3s!important;
 }
