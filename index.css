@@ -43,20 +43,14 @@ to
   position: absolute;
   top:80%;
   right:70%;
-  background: url(sp-1.png);
-  width: calc(6250px/25);
+  background: url(sp-2.png);
+  width: calc(7750px/31);
   height:250px;
   transform: translate(-50%,-50%) ;
-  transition-timing-function: linear;
 }
 
 .box1:hover {
- /* animation:animate1 0.3s steps(9) infinite;
-transition-delay:2s!important; */
-
-
-animation: animate1 1s steps(25) infinite;
-/* animation-timing-function: ease-in; */
+animation:animate1 1s steps(31) infinite;
 }
 
 
@@ -68,9 +62,16 @@ from
   }
 to
   {
-    background-position:6250px  ;
+    background-position:7750px;
   }
 }
+
+
+
+
+
+
+
 
 .box2
 {
