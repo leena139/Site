@@ -50,7 +50,7 @@ to
 }
 
 .box1:hover {
-animation:animate1 1s steps(31) infinite;
+animation:animate1 1s steps(31) 2;
 }
 
 
