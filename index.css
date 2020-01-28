@@ -41,29 +41,34 @@ to
 .box1
 {
   position: absolute;
-  top:80%;
-  right:70%;
-  background: url(sp-2.png);
-  width: calc(7750px/31);
+  top:31%;
+  right:60%;
+  background: url(hammy.png);
+  /* width: calc(7750px/31); */
   height:250px;
-  transform: translate(-50%,-50%) ;
+  width:250px;
+  /* transform: translate(-50%,-50%) ; */
 }
 
 .box1:hover {
-animation:animate1 1s steps(31) 2;
+/* animation:animate1 1s steps(31) 2; */
+ animation:animate1 1s  2;
 }
 
 
 @keyframes animate1
 {
-from
+  50% {
+    transform: translate(0, 20px);
+ }
+/* from
   {
-    background-position: 0;
+    background-position:0px;
   }
 to
   {
-    background-position:7750px;
-  }
+    background-position:15px;
+  } */
 }
 
 
