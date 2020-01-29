@@ -41,34 +41,35 @@ to
 .box1
 {
   position: absolute;
-  top:31%;
-  right:60%;
-  background: url(hammy.png);
-  /* width: calc(7750px/31); */
+  top:60%;
+  right:80%;
+  background: url(only-eyes.png);
+  width: calc(1250px/5);
   height:250px;
-  width:250px;
+  /* width:250px; */
   /* transform: translate(-50%,-50%) ; */
 }
 
 .box1:hover {
-/* animation:animate1 1s steps(31) 2; */
- animation:animate1 1s  2;
+animation:animate1 0.4s steps(5) 2;
+animation-direction: alternate-reverse;
+ /* animation:animate1 1s  2; */
 }
 
 
 @keyframes animate1
 {
-  50% {
+  /* 50% {
     transform: translate(0, 20px);
- }
-/* from
+ } */
+from
   {
     background-position:0px;
   }
 to
   {
-    background-position:15px;
-  } */
+    background-position:1250px;
+  }
 }
 
 
