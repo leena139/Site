@@ -53,15 +53,15 @@ to
 .box1:hover {
 animation:animate1 0.4s steps(5) 2;
 animation-direction: alternate-reverse;
+animation-fill-mode: both;
+
  /* animation:animate1 1s  2; */
 }
 
 
 @keyframes animate1
 {
-  /* 50% {
-    transform: translate(0, 20px);
- } */
+
 from
   {
     background-position:0px;
@@ -72,12 +72,25 @@ to
   }
 }
 
+.gifcheck
+{
+  padding-top:10%;
+  padding-left:80%;
+}
 
+.static {
+  position:absolute;
+
+}
+
+.static:hover {
+  opacity:0;
+}
 
 
 
 .logo {
-  padding-top:5%;
+  padding-top:7%;
   padding-left: 95%;
   opacity: 0;
   animation-name: ann;
