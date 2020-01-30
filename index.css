@@ -46,7 +46,7 @@ to
   height: 200px;
 }
 
-.static {
+/* .static {
   position:absolute;
   width:200px;
   height: 200px;
@@ -62,8 +62,26 @@ to
   width:200px;
   height:200px;
   z-index: 2;
+} */
+.static {
+  position:absolute;
+  width:200px;
+  height: 200px;
+  z-index: 3;
+
 }
 
+.static:hover {
+  z-index:1;
+}
+
+.active
+{
+  width:200px;
+  height:200px;
+  z-index: 2;
+  position:absolute;
+}
 
 
 @keyframes characterAnimation {
