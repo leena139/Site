@@ -38,38 +38,6 @@ to
 }
 
 
-.box1
-{
-  position: absolute;
-  top:60%;
-  right:80%;
-  background: url(only-eyes.png);
-  width: calc(1250px/5);
-  height:250px;
-  /* width:250px; */
-  /* transform: translate(-50%,-50%) ; */
-}
-
-.box1:hover {
-animation:animate1 0.4s steps(5) 2;
-animation-direction: alternate-reverse!important;
-/* animation-fill-mode: both; */
- /* animation:animate1 1s  2; */
-}
-
-
-@keyframes animate1
-{
-from
-  {
-    background-position:0px;
-  }
-to
-  {
-    background-position:1250px;
-  }
-}
-
 .gifcheck
 {
   padding-top:10%;
@@ -82,55 +50,22 @@ to
   position:absolute;
   width:200px;
   height: 200px;
-  z-index: 10;
+  z-index: 3;
 }
 
 .static:hover {
-  /* opacity:0; */
-  z-index: -1;
+  opacity:0;
+  /* z-index:1; */
 }
 
 .active
 {
   width:200px;
   height:200px;
+  /* z-index: 2; */
 }
 
 
-.logo {
-  padding-top:7%;
-  padding-left: 95%;
-  opacity: 0;
-  animation-name: ann;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-}
-
-
-@keyframes ann {
-  0% {
-    /* transform: scale(0) skew(15deg, 15deg); */
-    opacity: 0;
-  }
-  65% {
-    /* transform: scale(1.2) skew(-5deg, -5deg); */
-    opacity: 1;
-  }
-  100% {
-    /* transform: scale(1) skew(0deg, 0deg); */
-    opacity: 1;
-  }
-}
-
-
-.char {
-  animation-name: characterAnimation;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 90%;
-}
 
 @keyframes characterAnimation {
   0% {
@@ -149,46 +84,3 @@ to
     transform: rotate(0deg);
   }
 }
-
-
-
-
-
-/* .box2
-{
-  position: absolute;
-  top:80%;
-  right:70%;
-  background: url(css_sprites15.png);
-  width: calc(750px/3);
-  height:250px;
-  transform: translate(-50%,-50%) ;
-  transition-timing-function: linear;
-}
-
-.box2:hover {
- animation:animate3 1s steps(3) infinite;
-}
-
-@keyframes animate3
-{
-from
-  {
-    background-position: 0;
-  }
-to
-  {
-    background-position:750px;
-  }
-}
-
-.need1
-{
-  position: absolute;
-  top:20%;
-  right:32%;
-  margin-right:10%;
-  width:112px;
-  height:212px;
-  background: url(bg-needbar-02.png);
-} */
