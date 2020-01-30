@@ -52,16 +52,14 @@ to
 
 .box1:hover {
 animation:animate1 0.4s steps(5) 2;
-animation-direction: alternate-reverse;
-animation-fill-mode: both;
-
+animation-direction: alternate-reverse!important;
+/* animation-fill-mode: both; */
  /* animation:animate1 1s  2; */
 }
 
 
 @keyframes animate1
 {
-
 from
   {
     background-position:0px;
@@ -76,17 +74,27 @@ to
 {
   padding-top:10%;
   padding-left:80%;
+  width:200px;
+  height: 200px;
 }
 
 .static {
   position:absolute;
-
+  width:200px;
+  height: 200px;
+  /* z-index: 10; */
 }
 
 .static:hover {
   opacity:0;
+  /* z-index: -1; */
 }
 
+.active
+{
+  width:200px;
+  height:200px;
+}
 
 
 .logo {
